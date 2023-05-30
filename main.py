@@ -82,20 +82,4 @@ while True:
         print(" Ничья! ")
         break
 
-def chek_win():
-    win_cord = (((0, 0), (0, 1), (0, 2)), ((1, 0), (1,1), (1, 2)), ((2, 0), (2, 1), (2, 2)),
-                ((0, 2 ), (1, 1), (2, )), ((0, 0), (1, 1), (2, 2)), ((0, 0), (1, 0 ), (2, 0)),
-                ((0, 1), 1, 1), (2, 1), ((0, ), (1, 2), (2, 2))
-    )
-
-    for cord in win_cord:
-        symbol = []
-        for i in cord:
-            symbol.append(field[i[0]][i[1]])
-        if symbol == ["X","X","X"]:
-            print(" Выиграл X !!! ")
-            return True
-        if symbol == ["0","0","0"]:
-            print(" Выиграл 0 !!! ")
-            return True
 
